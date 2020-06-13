@@ -12,7 +12,7 @@ export const Balance = () => {
         total = amounts.reduce((prevItem, item) => (prevItem + item)).toFixed(2);
     }
     else {
-        total = 0;
+        total = amounts[0];
     }
     return(
         <div style={{backgroundColor:"#fddb27ff",color:'black', textAlign:'center', border:"2px solid black", borderRadius:"1%"}}>
