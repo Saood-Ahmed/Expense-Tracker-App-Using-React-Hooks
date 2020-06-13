@@ -7,7 +7,7 @@ export const Balance = () => {
 
     const context = React.useContext(GlobalContext)
     const amounts = context.transactions.map((transaction => parseInt(transaction.amount)));
-    if(amounts.length > 0) {
+    if(amounts.length > 1) {
         var total = amounts.reduce((prevItem, item) => (prevItem + item)).toFixed(2);
     }
     else {
