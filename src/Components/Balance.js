@@ -13,6 +13,9 @@ export const Balance = () => {
     }
     else {
         total = amounts[0];
+        if(total === Nan) {
+            total = 0;
+        }
     }
     return(
         <div style={{backgroundColor:"#fddb27ff",color:'black', textAlign:'center', border:"2px solid black", borderRadius:"1%"}}>
