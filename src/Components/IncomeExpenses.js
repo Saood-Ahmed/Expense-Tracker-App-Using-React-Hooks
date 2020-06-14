@@ -16,11 +16,11 @@ export const IncomeExpenses = () => {
         <div className="container">
             <div>
                 <h4 style={{color:"green"}}>Income is:</h4>
-                <h4 style={{border:'1px solid green', borderRadius:'2%'}}>{income.toFixed(2)}</h4>
+                <h4 style={{border:'1px solid green', borderRadius:'2%'}}>${income.toFixed(2)}</h4>
             </div>
             <div>
                 <h4 style={{color:"red"}}>Expense is:</h4>
-                <h4 style={{border:'1px solid red', borderRadius:'2%'}}>{(expense * -1).toFixed(2)}</h4>
+                <h4 style={{border:'1px solid red', borderRadius:'2%'}}>-${(expense * -1).toFixed(2)}</h4>
             </div>
         </div>
     )
