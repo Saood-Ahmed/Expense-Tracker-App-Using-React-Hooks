@@ -13,7 +13,7 @@ export const Balance = () => {
     }
     else {
         total = amounts[0];
-        if(total === Nan) {
+        if(total === NaN) {
             total = 0;
         }
     }
